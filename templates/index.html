@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Portfolio</title>
+
+    <script>
+        function tes() {
+            alert('Terima kasih, Saya akan membalas pesan anda secepatnya!');
+        }
+    </script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+        <div class="container-fluid d-flex justify-content-between">
+            <a class="navbar-brand text-light" href="#">Portfolio</a>
+            <div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#profile">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#portfolio">Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div id="home" class="header">
+            <h1>Selamat Datang di Portfolio Saya</h1>
+            <p>Seorang desainer grafis dan juga siapa tahu akan jadi pengembang web (sedang di usahakan).</p>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <div id="profile" class="profile-info">
+                        <h2 class="text-center">My Profile</h2>
+                        <p class="text-center">
+                            Hai, saya Muhammad Iqbal. ulusan tahun 2020 dari SMKN 1 Lhokseumawe dengan
+                            jurusan Multimedia.
+                            Sekarang, saya berkuliah di Universitas Malikussaleh dan sudah mencapai semester 5. Saya
+                            memiliki sedikit pengalaman
+                            di bidang desain grafis. Itu adalah waktu ketika saya mulai mengejar minat saya dalam
+                            menciptakan karya visual yang kreatif.
+                            Dan sekarang, saya sedang berusaha untuk memperoleh pengalaman di dunia pengembangan web.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h2 id="portfolio" class="text-center mb-4">My Portfolio</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/static/img/porto1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">My favorite movies</h5>
+                            <p class="card-text">Website my favorite movies berisi implementasi dari materi chapter 2
+                                dan juga sebagai tugas chapter 2-3.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/static/img/porto2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Browsur sekolah</h5>
+                            <p class="card-text">Browsur sekolah SMKN1 Lhokseumawe dan juga sebagai tugas sekolah saya
+                                dulu.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/static/img/porto3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Kartu nama</h5>
+                            <p class="card-text">Ini adalah kartu nama dengan nama perusahaan "DESIGN STUDIO" dan juga
+                                sebagai tugas sekolah saya dulu.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/static/img/porto4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Poster makanan</h5>
+                            <p class="card-text">Poster makanan salah satu makanan khas daerah ACEH "BOH ROM-ROM" dan
+                                juga sebagai tugas sekolah saya dulu.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container mt-5">
+            <h1 id="contact">Contact Me</h1>
+            <p>Silakan hubungi Saya jika Anda memiliki pertanyaan atau masukan.</p>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nama</label>
+                    <input type="text" class="form-control" id="name" placeholder="Nama Anda">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email Anda">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Pesan</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Tulis pesan Anda"></textarea>
+                </div>
+                <button onclick="tes()" type="button" class="btn btn-outline-dark">Kirim</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+</body>
+
+<footer class="bg-dark text-light text-center py-3">
+    <p>&copy; 2023 Muhammad Iqbal. All Rights Reserved.</p>
+    <p>Discord: <a href="https://discord.com/users/bigmouse._" target="_blank" class="text-light">BIG亗MOUSE</a></p>
+    <p>GitHub: <a href="https://github.com/Genxyng/" target="_blank" class="text-light">Genxyng</a></p>
+</footer>
+
+
+</html>
